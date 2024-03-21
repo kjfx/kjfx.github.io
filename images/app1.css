@@ -1,0 +1,12 @@
+.container{width:100%; max-width:1920px; margin:20px auto; height:100%; overflow:hidden;}
+.container .left{width:100%; float:left; background:#FFF; box-shadow: 0 0 14px rgba(0,0,0,.04);}
+.container .left .item_list{width:92%; min-width:440px; height:100%; padding:0px; margin:4% 4%; border-bottom:1px solid #eee; transition:all 0.5s; float:left; border-radius:20px; overflow:hidden;box-shadow: 0 0 20px rgba(0,0,0,.1);}
+.container .left .item_list:hover{box-shadow: 0 0 20px rgba(0,0,0,.3);}
+.container .left .item_list img{width:100%; height:100%; float:left;}
+.container .left .item_list h2{padding:1em 1em; font-weight:bold; color:#333;float:left; font-size:2em;}
+.container .left .item_list .item_img{width:228px; height:143px; float:left;}
+.container .left .item_list .item_img img{border-radius:8px;}
+.container .left .item_list .text_list{width:670px; float:right; line-height:150%; padding-top:10px;}
+.container .left .item_list .text_list a{font-size:18px; font-weight:bold; color:#333; margin-left:0px;}
+.container .left .item_list .text_list a:hover{color:#007be3}
+.container .left .item_list .text{padding:10px 0;}
