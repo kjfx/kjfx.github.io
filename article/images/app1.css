@@ -1,0 +1,4 @@
+.container{width:100%; max-width:1920px; margin:20px auto; height:100%; overflow:hidden;}
+.container .left{width:100%; float:left; background:#FFF; box-shadow: 0 0 14px rgba(0,0,0,.04);}
+.container .left p{font-size:2em; font-weight: inherit;}
+.container .left p a{text-decoration:underline; font-weight:lighter; margin-bottom:20px; display:inline-block;}
