@@ -10,4 +10,5 @@
 .container .left .video{width:95%; margin:0 auto;}
 .container .left p{font-size:2em; font-weight: inherit;}
 .container .left p a{text-decoration:underline; font-weight:lighter; margin-bottom:20px; display:inline-block;}
+.container .left span{font-size:16px;}
 .container .left h1{font-size:32px; color:#333; padding:20px 0px; width:95%; margin:0 auto;}

@@ -21,6 +21,7 @@ body {
 .container .left iframe{width:100%; min-height:506px; border-radius:10px;}
 .container .left p{font-size:20px; font-weight: inherit;}
 .container .left p a{text-decoration:underline; font-weight:lighter;}
+.container .left span{font-size:16px;}
 
 
 .container .left h1{font-size:32px; color:#333; padding:20px 50px;}
