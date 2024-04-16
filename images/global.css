@@ -40,3 +40,5 @@ table {
     border-spacing: 0;
 }
 h1,h2,h3{padding:0; margin:0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;}
+.ol_list li{list-style-type:disc;}
+.ol_list li a{text-decoration:underline;}
