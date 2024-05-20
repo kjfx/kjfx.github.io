@@ -46,7 +46,7 @@ h1,h2,h3{padding:0; margin:0;font-family: inherit;font-size: 100%;font-weight: i
 .layout #inputYAML{margin-bottom:10px;}
 .layout #outputYAML{margin-top:10px;}
 .layout .content{padding:20px 0; line-height:1.5;}
-
+.layout #kd{word-wrap: break-word; word-break: break-all; font-size:14px;}
 
 
 
