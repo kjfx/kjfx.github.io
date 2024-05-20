@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>将各种节点转socks5，支持ssr,ss,vmess,v2ray,clash转socks5，自建机场节点转socks5</title>
+<link href="global.css" rel="stylesheet" type="text/css" />
+<script src="jquery.min.js"></script>
+</head>
+
+<body>
+
+
+<div class="bg">
+<div class="layout">
+<h1>将各种节点转socks5，支持ssr,ss,vmess,v2ray,clash转socks5，自建机场节点转socks5节点</h1>
+<p class="content">
+v2rayN软件：<a href="https://github.com/2dust/v2rayN/releases/latest" target="_blank">点击下载>></a><br>
+
+本地订阅转换工具：<a href="https://github.com/2dust/v2rayN/releases/latest" target="_blank">点击下载>></a><br>
+
+v2rayN软件：<a href="https://github.com/2dust/v2rayN/releases/latest" target="_blank">点击下载>></a>
+</p>
+<script src="js-yaml.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){$('#inputYAML').on('dragover drop',function(e){e.preventDefault();e.stopPropagation();if(e.type==='drop'){const file=e.originalEvent.dataTransfer.files[0];if(file){const reader=new FileReader();reader.onload=function(event){$('#inputYAML').val(event.target.result)};reader.readAsText(file)}}});$('#processButton').click(function(){const inputYAML=$('#inputYAML').val();const startPort=parseInt($('#startPort').val());const infoDiv=$('#infoDiv');try{const yamlData=jsyaml.load(inputYAML);const numProxies=yamlData.proxies.length;const newYAML={'allow-lan':true,dns:{enable:true,'enhanced-mode':'fake-ip','fake-ip-range':'198.18.0.1/16','default-nameserver':['114.114.114.114'],nameserver:['https://doh.pub/dns-query']},listeners:[],proxies:yamlData.proxies};newYAML.listeners=Array.from({length:numProxies},(_,i)=>({name:`mixed${i}`,type:'mixed',port:startPort+i,proxy:yamlData.proxies[i].name}));const newYAMLString=jsyaml.dump(newYAML);$('#outputYAML').val(newYAMLString);const blob=new Blob([newYAMLString],{type:'text/yaml'});const downloadLink=document.createElement('a');downloadLink.href=URL.createObjectURL(blob);downloadLink.download='config.yaml';downloadLink.textContent='点击此处下载生成的节点文件';const outputDiv=document.getElementById('outputDiv');outputDiv.innerHTML='';outputDiv.appendChild(downloadLink);infoDiv.html(`起始端口：${startPort}，结束端口：${startPort+numProxies-1}`)}catch(error){infoDiv.html('发生异常，请确认文件格式正确，或尝试刷新页面重试！')}})});function cleantext(){$("#infoDiv").html("");$("#outputDiv").html("");$("#outputYAML").val("")}
+</script>
+<h2>Clash转socks5代理工具：</h2>
+<textarea id="inputYAML" rows="12" style="width:100%;" placeholder="拖动文件到此处或在此处粘贴"></textarea>
+起始端口：
+<input type="number" id="startPort" min="1" step="1" value="42000">
+<button class="btn" id="processButton" onmousedown="cleantext()">↓点击生成节点配置↓</button>
+<div style="padding:10px 0;">
+    节点列表：<span id="infoDiv" style="color: red;"></span><br>
+    <textarea id="outputYAML" rows="12" style="width: 100%;" placeholder="生成结果"></textarea>
+</div>
+<div id="outputDiv"></div>
+</div>
+</div>
+
+
+
+</body>
+</html>
