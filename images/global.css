@@ -29,6 +29,7 @@ a:active, a:hover {
 a {
 	color: #666;
 	text-decoration: none;
+	word-break:break-all;
 }
 a:hover {
 	color: #007be3;
