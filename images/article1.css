@@ -12,4 +12,5 @@
 .container .left p a{font-size:1.2em;text-decoration:underline; margin-bottom:20px; display:inline-block; color:#333;}
 .container .left p strong{font-size:1.2em; color:#333}
 .container .left h1{font-size:2.5em; color:#333; padding:20px 0px; width:94%; margin:0 auto;}
-.container .left .video h2{font-size:2em; color:#333; font-weight:bold; margin-bottom:0.3em;}
+.container .left .video h2{font-size:2em; color:#333; font-weight:bold; margin-bottom:0.2em;}
+.copy-text{display:block; text-align:right; cursor:pointer;font-size:14px;color:#CCC; padding-right:3px; position:absolute; right:0; top:0;}

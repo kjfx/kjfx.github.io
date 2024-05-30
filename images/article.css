@@ -23,8 +23,15 @@ body {
 .container .left p a{text-decoration:underline; color:#333}
 .container .left p a:hover{color:#007be3;}
 .container .left p strong{font-size:20px; color:#333}
-.container .left .video h2{font-size:24px; color:#333; font-weight:bold; margin-bottom:8px; margin-top:30px;}
-
+.container .left .video h2{font-size:24px; color:#333; font-weight:bold; margin-bottom:10px; margin-top:30px;}
+.copy_layout{position:relative;}
+.copy-text{display:none; text-align:right; cursor:pointer;font-size:14px;color:#CCC; padding-right:3px; position:absolute; right:0; top:0;}
+.copy-text:hover{color:#FFF;}
+.copy-content{display: block; background:#50556b; color:#FFF; font-size:14px; line-height:1.5; padding:10px 15px; border-radius:3px;}
+.copy_layout:hover .copy-text{display:block;}
+.container li{color:#333;}
+.container li a{color:#333;}
+.container li a:hover{color:#007be3}
 
 .container .left h1{font-size:32px; color:#333; padding:20px 50px; font-weight:bold; margin-bottom:30px;}
 .container .left .data{text-align:center; font-size:14px; padding:20px; margin:0 auto; width:96%; border-bottom:1px solid #eee;}
