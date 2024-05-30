@@ -38,8 +38,6 @@
 <div class="left">
 <h1>Hysteria 2 一键安装教程，搭建歇斯底里2协议节点，sing-box使用方法，搭建vpn服务器</h1>
 <div class="video">
-<iframe src="https://www.youtube.com/embed/EbB7BVe81Fc?si=bSsEpRuhqoEqq7NP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 <p>
 Hysteria 2 是一个比较新的协议，类似于v2ray，但比v2ray节点速度更快，支持全平台使用。Hysteria 是一个强大、快速、抗审查的代理工具，抗封锁能力强。<br><br>
 <strong>搭建步骤：</strong>
@@ -57,23 +55,30 @@ FinalShell下载（Windows版）：<a href="https://kjfx.lanzoui.com/iqm6Uosbzha
 </p>
 
 <h2>三、更新 VPS 系统</h2>
-<p>
+<p class="copy_layout">
+<span class="copy-text" id="copyButton1">复制</span>
+<span class="copy-content" id="copyText1">
 apt update -y<br>
 apt install curl sudo -y
+</span>
 </p>
 
 <h2>四、Hysteria 2 一键搭建代码</h2>
-<p>
-<span>wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hysteria2-install/main/hysteria2-install-main/hy2/hysteria.sh && bash hysteria.sh</span>
+<p class="copy_layout">
+<span class="copy-text" id="copyButton2">复制</span>
+<span class="copy-content" id="copyText2">wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hysteria2-install/main/hysteria2-install-main/hy2/hysteria.sh && bash hysteria.sh</span>
 </p>
 
 <h2>五、Hysteria 服务相关命令</h2>
-<p>
+<p class="copy_layout">
+<span class="copy-text" id="copyButton3">复制</span>
+<span class="copy-content" id="copyText3">
 systemctl start hysteria-server.service    # 启动 hysteria 服务<br>
 systemctl enable hysteria-server.service   # 设置 hysteria 服务 开机自启动<br>
 systemctl restart hysteria-server.service  # 重启 hysteria 服务<br>
 systemctl stop hysteria-server.service     # 停止 hysteria 服务<br>
-systemctl status hysteria-server.service   # 查看 hysteria 服务 状态<br>
+systemctl status hysteria-server.service   # 查看 hysteria 服务 状态
+</span>
 </p>
 
 <h2>六、Hysteria客户端配置</h2>
@@ -87,8 +92,9 @@ systemctl status hysteria-server.service   # 查看 hysteria 服务 状态<br>
 </ol>
 
 <h2>七、sing-box 配置文件</h2>
-<p>
-<span>
+<p class="copy_layout">
+<span class="copy-text" id="copyButton4">复制</span>
+<span class="copy-content" id="copyText4">
 {<br>
 &quot;dns&quot;: {<br>
 &quot;servers&quot;: [<br>
@@ -191,10 +197,9 @@ systemctl status hysteria-server.service   # 查看 hysteria 服务 状态<br>
 
 
 
-
-
 </div>
-</div>
+<script type="text/javascript" src="images/copytext.js"></script>
+
 
 <footer class="footer">
 <div class="footer_nav">
