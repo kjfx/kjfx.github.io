@@ -19,8 +19,9 @@ body {
 .container .left{width:100%; max-width:1000px; background:#FFF; box-shadow: 0 0 14px rgba(0,0,0,.04); margin:0 auto; padding-bottom:20px; border-radius:10px;}
 .container .left .video{width:90%; margin:0 auto;}
 .container .left iframe{width:100%; min-height:506px; border-radius:10px;}
+.container .left .video img{max-width:100%;}
 .container .left p{font-size:16px; font-weight: inherit; margin:0 0 20px 0; color:#333;}
-.container .left p a{text-decoration:underline; color:#333}
+.container .left p a{text-decoration:underline; color:#1068ab}
 .container .left p a:hover{color:#007be3;}
 .container .left p strong{font-size:20px; color:#333}
 .container .left .video h2{font-size:24px; color:#333; font-weight:bold; margin-bottom:10px; margin-top:30px;}
@@ -30,7 +31,7 @@ body {
 .copy-content{display: block; background:#50556b; color:#FFF; font-size:14px; line-height:1.5; padding:10px 15px; border-radius:3px;}
 .copy_layout:hover .copy-text{display:block;}
 .container li{color:#333;}
-.container li a{color:#333;}
+.container li a{color:#1068ab;}
 .container li a:hover{color:#007be3}
 
 .container .left h1{font-size:32px; color:#333; padding:20px 50px; font-weight:bold; margin-bottom:30px;}
