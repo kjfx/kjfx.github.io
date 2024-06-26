@@ -23,7 +23,7 @@ body {
 .container .left p{font-size:16px; font-weight: inherit; margin:0 0 20px 0; color:#333;}
 .container .left p a{text-decoration:underline; color:#1068ab}
 .container .left p a:hover{color:#007be3;}
-.container .left p strong{font-size:20px; color:#333}
+.container .left p strong{}
 .container .left .video h2{font-size:24px; color:#333; font-weight:bold; margin-bottom:10px; margin-top:30px;}
 .copy_layout{position:relative;}
 .copy-text{display:none; text-align:right; cursor:pointer;font-size:14px;color:#CCC; padding-right:3px; position:absolute; right:0; top:0;}

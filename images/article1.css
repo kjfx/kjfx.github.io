@@ -10,7 +10,7 @@
 .container .left .video{width:94%; margin:0 auto;}
 .container .left p{font-size:2em; font-weight:normal;}
 .container .left p a{font-size:1em;text-decoration:underline; display:inline-block; color:#1068ab;}
-.container .left p strong{font-size:1.2em; color:#333}
+.container .left p strong{}
 .container .left h1{font-size:2.5em; color:#333; padding:20px 0px; width:94%; margin:0 auto;}
 .container .left .video h2{font-size:2em; color:#333; font-weight:bold; margin-bottom:0.2em;}
 
