@@ -8,10 +8,10 @@
 .container{width:100%; max-width:1920px; margin:20px auto; height:100%; overflow:hidden;}
 .container .left{width:100%; float:left; background:#FFF; box-shadow: 0 0 14px rgba(0,0,0,.04);}
 .container .left .video{width:94%; margin:0 auto;}
-.container .left p{font-size:2em; font-weight:normal; color:#666;}
+.container .left p{font-size:2em; font-weight:normal;}
 .container .left p a{font-size:1em;text-decoration:underline; display:inline-block; color:#1068ab;}
 .container .left p strong{}
-.container .left h1{font-size:2.5em; color:#666; padding:0.5em 0 1em 0px; width:94%; margin:0 auto; line-height:1.3;}
+.container .left h1{font-size:2.5em; color:#333; padding:0.5em 0 1em 0px; width:94%; margin:0 auto; line-height:1.3;}
 .container .left .video h2{font-size:2em; color:#333; font-weight:bold; margin-bottom:0.2em;}
 
 .copy_layout{position:relative;}
