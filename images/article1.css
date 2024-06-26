@@ -11,7 +11,7 @@
 .container .left p{font-size:2em; font-weight:normal;}
 .container .left p a{font-size:1em;text-decoration:underline; display:inline-block; color:#1068ab;}
 .container .left p strong{}
-.container .left h1{font-size:2.5em; color:#333; padding:20px 0px; width:94%; margin:0 auto;}
+.container .left h1{font-size:2.5em; color:#333; padding:0.5em 0 1em 0px; width:94%; margin:0 auto; line-height:1.2;}
 .container .left .video h2{font-size:2em; color:#333; font-weight:bold; margin-bottom:0.2em;}
 
 .copy_layout{position:relative;}
