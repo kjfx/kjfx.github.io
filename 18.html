@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>【MAC】虚拟机安装openwrt软路由，全屋高速翻墙！vmware fusion mac openwrt 安装旁路由</title>
+<link href="images/global.css" rel="stylesheet" type="text/css" />
+<link href="images/article.css" rel="stylesheet" type="text/css" />
+<link href="images/article1.css" rel="stylesheet" type="text/css" media="screen and (max-width:999px)" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KE2WLXNDG9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KE2WLXNDG9');
+</script>
+</head>
+
+<body>
+<header class="header">
+<div class="inner">
+<div class="logo"><strong>科技分享</strong></div>
+<div class="nav">
+<a href="https://kjfx.github.io/">首页</a>
+<a href="https://www.youtube.com/playlist?list=PLV6vw9bIzA1AYsw1jyUNtQho_KTfxcMys">机场评测</a>
+<a href="https://github.com/Kejifaxian/welcome/">软件下载</a>
+<a href="https://www.youtube.com/playlist?list=PLV6vw9bIzA1DxCUi7zFC8by8agOln-UlV">手机翻墙</a>
+<a href="https://www.youtube.com/playlist?list=PLV6vw9bIzA1DxCUi7zFC8by8agOln-UlV">电脑翻墙</a>
+<a href="https://www.youtube.com/playlist?list=PLV6vw9bIzA1BU8PNvaPV1V7L5VEe6I271">软路由</a>
+<a href="https://www.youtube.com/@kjfx6/search?query=%E5%85%8D%E8%B4%B9vpn">VPN</a>
+<a href="https://www.youtube.com/@kjfx6/search?query=chatgpt">干货视频</a>
+</div>
+</div>
+</header>
+
+<div class="container">
+<div class="left">
+<h1>【MAC】虚拟机安装openwrt软路由，全屋高速翻墙！vmware fusion mac openwrt 安装旁路由</h1>
+<div class="video">
+
+<p>
+MAC通过VMware虚拟机安装OpenWrt 旁路由，实现翻墙上网，操作简单，支持全屋科学上网。<br>
+视频教程：▶ <a href="https://youtu.be/85pYYiXwZRQ" target="_blank">https://youtu.be/85pYYiXwZRQ</a>
+</p>
+
+<p>
+<strong>步骤：</strong><br>
+1、下载VMware fusion虚拟机，<a href="https://youtu.be/BpOke0JKX3Y" target="_blank">下载教程>></a>，<a href="https://github.com/kjfx/rj/releases/download/20210423/xuniji-13.5.2-MAC.zip" target="_blank">备用下载>></a><br>
+2、下载OpenWrt固件：<a href="https://github.com/kjfx/rj/releases/download/20210315/openwrt-2024-armsr-armv8.vmdk" target="_blank">点击下载>></a>
+</p>
+
+<p>
+<strong>编辑命令：</strong><br>
+vi /etc/config/network<br>
+:wq<br>
+reboot
+</p>
+
+<p>
+<strong>开启路由转发功能：</strong><br>
+让局域网的其它设备也能科学上网，需开启路由转发功能。<br>
+开启路由转发（关机失效）：<br>
+sudo sysctl -w net.inet.ip.forwarding=1<br>
+<br>
+开启路由转发（永久生效）：<br>
+sudo sh -c ‘echo “net.inet.ip.forwarding=1” >> /etc/sysctl.conf && sysctl -w net.inet.ip.forwarding=1’
+</p>
+
+<p>
+<strong>机场网址：</strong><a href="https://stc.txyun.xyz/" target="_blank">https://stc.txyun.xyz/</a>
+</p>
+
+<p>
+<strong>常见问题：</strong><br>
+如果国内网站打开慢，请添加以下规则<br>
+网络-防火墙-自定义规则<br>
+iptables -t nat -I POSTROUTING -j MASQUERADE
+</p>
+
+
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+
+<footer class="footer">
+<div class="footer_nav">
+Copyright &copy; 2024 科学上网大全
+<a href="https://kjfx.github.io/">首页</a><a href="https://www.youtube.com/@kjfx6" target="_blank">观看更多视频>></a><a href="#">返回顶部↑</a></div>
+<div class="tips">*本站部分内容来自网络，如果您是内容或软件的作者，不希望您的内容在本站展示，请联系我们，谢谢！</div>
+</footer>
+
+</body>
+</html>
