@@ -1,1 +1,1 @@
-# 科技分享的博客，[点击直达>>](https://kjfx.github.io/)
+# 科技分享的博客，[点击直达>>](https://www.kjfx.cc/)
