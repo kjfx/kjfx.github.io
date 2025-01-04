@@ -4,7 +4,7 @@ body {
 	margin:0;
 	font: 2em/1.5 "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
 }
-.layout{width:100%; background:#d4edff; margin:0 auto; border-radius: 0rem; filter: drop-shadow(0 .4rem 4rem rgba(0, 0, 0, .0));}
+.layout{width:100%; min-width:400px; background:#d4edff; margin:0 auto; border-radius: 0rem; filter: drop-shadow(0 .4rem 4rem rgba(0, 0, 0, .0));}
 h1,h2,h3{padding:0; margin:0; line-height:1.2; font-size:1em;}
 .layout .header .header_bg{border-radius:0;}
 .layout .header .logo{width:3em; height:3em; position:absolute; left:50%; top:2.1em; margin-left:-1.8em; border-radius:100%; overflow:hidden; border:0.3em solid #d4edff;}
