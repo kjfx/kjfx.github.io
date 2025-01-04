@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+html {font-size: 100%;	-ms-text-size-adjust: 100%;	-webkit-text-size-adjust: 100%}
+html, button, input, select, textarea {font-family: sans-serif; font-size:16px; color:#000;}
+textarea {border-radius:3px; border:1px solid #666; padding:3px;}
+body {
+	margin:2em 0 0 0;
+	font: 16px/1.5 "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+	color: #000;
+	background-color: #d4edff;
+}
+a:active, a:hover {outline: 0}
+a {color: #007be3;}
+a:hover {color: #006ddc;}
+div,ul,li,p{padding:0; margin:0; list-style:none;}
+h1,h2,h3{padding:0; margin:0; line-height:1.2; font-size:30px;}
+
+.layout{max-width:800px; background:#d4edff; margin:0 auto; border-radius: 2rem; filter: drop-shadow(0 .4rem 4rem rgba(0, 0, 0, .16));}
+.layout .header{position:relative;}
+.layout .header .header_bg{border-radius: 2rem 2rem 0 0;}
+.layout .header .logo{width:6em; height:6em; position:absolute; left:50%; top:5.4em; margin-left:-3.5em; border-radius:100%; overflow:hidden; border:0.5em solid #d4edff;}
+.layout .header .logo img{width:100%;}
+.layout .header h1{text-align:center; margin-top:1em;}
+.layout .header p{text-align:center; margin-top:10px;}
+
+.layout .nav_list{width:94%; margin:0 auto; padding-top:2em;}
+.layout .nav_list .nav_item{background:#FFF; border-radius:0.3em; text-align:center; font-size:1.1em; line-height:3.2em; height:3.2em; position:relative; margin-bottom:0.8em;}
+.layout .nav_list .nav_item:hover{background:#f9f9f9;}
+.layout .nav_list .nav_item img{width:46px; height:46px; position:absolute; left:5px; top:5px;}
+.layout .nav_list .nav_item a{text-decoration:none; color:#000; display:block;}
+
+
+
+
